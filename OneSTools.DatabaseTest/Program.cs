@@ -17,14 +17,6 @@ namespace OneSTools.DatabaseTest
                 IntegratedSecurity = true
             }.ToString();
 
-            //var connStr = new SqlConnectionStringBuilder()
-            //{
-            //    DataSource = "s01",
-            //    InitialCatalog = "erp_main",
-            //    UserID = "sa",
-            //    Password = "1qazxsw@"
-            //}.ToString();
-
             var connection = new SqlConnection(connStr);
 
             await connection.OpenAsync();
